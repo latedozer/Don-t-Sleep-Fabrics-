@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.Latedozer.dontsleepmixins",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "BedUseMixin",
+    "SleepWakeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
