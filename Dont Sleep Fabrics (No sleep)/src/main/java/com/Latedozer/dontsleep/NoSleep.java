@@ -7,6 +7,7 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.PlayerManager;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.world.World;
@@ -34,7 +35,8 @@ public class NoSleep implements ModInitializer {
      BedUseCallback.EVENT.register((player, bed) ->{
          player2 = pm.getPlayer(player.getUuid());
          if(player2.world.getRegistryKey() == World.OVERWORLD) {
-                 player.sendMessage(Text.of("You know you shouldn't lay down, they always came for you"), true);
+             player.sendMessage(new LiteralText("You know you shouldn't lay down, they always came for you" +
+                     " (SpawnPoint set)"), true);
              if (player2 != null) {
                  player2.setSpawnPoint(world.OVERWORLD, player.getBlockPos(), 0, true, true);
              }

@@ -3,8 +3,6 @@ package com.Latedozer.dontsleep;
 import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.EventFactory;
 import net.minecraft.block.BedBlock;
-import net.minecraft.block.entity.BedBlockEntity;
-import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.ActionResult;
 

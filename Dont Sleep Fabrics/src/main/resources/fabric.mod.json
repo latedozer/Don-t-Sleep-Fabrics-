@@ -3,6 +3,7 @@
   "id": "dontsleep",
   "version": "${version}",
 
+
   "name": "Don't Sleep",
   "description": "You don't want to sleep",
   "authors": [
@@ -20,8 +21,17 @@
   "entrypoints": {
     "main": [
       "com.Latedozer.dontsleep.DontSleep"
+    ],
+    "cardinal-components-entity": [
+      "com.Latedozer.dontsleep.dontsleepcomponents"
     ]
+
   },
+  "custom": {
+  "cardinal-components": [
+    "dontsleep:sleeptries"
+  ]
+},
   "mixins": [
     "dontsleep.mixins.json"
   ],

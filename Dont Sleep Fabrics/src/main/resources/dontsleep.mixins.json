@@ -4,10 +4,10 @@
   "package": "com.Latedozer.dontsleepmixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-  ],
-  "client": [
     "BedUseMixin",
     "SleepWakeMixin"
+  ],
+  "client": [
   ],
   "injectors": {
     "defaultRequire": 1
